@@ -1,0 +1,9 @@
+﻿D:\VisualStudio\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (L2Ex1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Main.cpp
+  Math.cpp
+C:\Users\tsaaa\source\repos\NewRepo3\L3Ex1\Math.cpp(13,14): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\tsaaa\source\repos\NewRepo3\L3Ex1\Math.cpp(17,18): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\tsaaa\source\repos\NewRepo3\L3Ex1\Math.cpp(27,14): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\tsaaa\source\repos\NewRepo3\L3Ex1\Math.cpp(31,18): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  L2Ex1.vcxproj -> C:\Users\tsaaa\source\repos\NewRepo3\L3Ex1\x64\Debug\L3Ex1.exe
