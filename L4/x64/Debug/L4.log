@@ -1,0 +1,5 @@
+﻿  Sort.cpp
+C:\Users\tsaaa\source\repos\NewRepo3\L4\Sort.cpp(17,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\tsaaa\source\repos\NewRepo3\L4\Sort.cpp(26,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\tsaaa\source\repos\NewRepo3\L4\Sort.cpp(112): warning C4715: 'Partition': not all control paths return a value
+  L4.vcxproj -> C:\Users\tsaaa\source\repos\NewRepo3\L4\x64\Debug\L4.exe
