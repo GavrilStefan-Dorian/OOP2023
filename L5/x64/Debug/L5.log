@@ -1,0 +1,6 @@
+﻿  Number.cpp
+C:\Users\tsaaa\source\repos\NewRepo3\L5\Number.cpp(11,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\tsaaa\source\repos\NewRepo3\L5\Number.cpp(262,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  Generating Code...
+  L5.vcxproj -> C:\Users\tsaaa\source\repos\NewRepo3\L5\x64\Debug\L5.exe
