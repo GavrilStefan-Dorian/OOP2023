@@ -1,0 +1,3 @@
+﻿  RangeRover.cpp
+C:\Users\tsaaa\source\repos\NewRepo3\L6\RangeRover.cpp(3,53): warning C4305: 'argument': truncation from 'double' to 'float'
+  L6.vcxproj -> C:\Users\tsaaa\source\repos\NewRepo3\L6\x64\Debug\L6.exe
