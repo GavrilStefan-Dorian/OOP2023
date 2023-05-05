@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <string.h>
 template <class K, class V>
 struct Pair {
 	K key;
@@ -19,7 +20,6 @@ template <class K, class V>
 class MapIt {
 public:
 	Node<K, V>* it;
-
 	MapIt<K, V>& operator++() {
 		it = it->next;
 		return *this;
@@ -36,8 +36,6 @@ class Map {
 	Node<K, V>* last;
 
 	int count;
-
-
 public:
 
 	Map() {
@@ -50,17 +48,21 @@ public:
 
 	~Map() {
 		Node<K, V>* aux = new Node<K, V>;
+		Node<K, V>* temp = new Node<K, V>;
+
 		aux = first;
 		while (aux != nullptr) {
-			Node<K, V>* temp = aux->next;
-			delete aux->next;
+			temp = aux->next;
 			aux->p.index = 0;
 			aux->p.key = 0;
 			aux->p.value = 0;
 			delete aux;
 			aux = temp;
-			delete temp;
 		}
+		delete aux;
+		delete temp;
+		temp = nullptr;
+		aux = nullptr;
 		count = 0;
 	}
 
@@ -83,7 +85,12 @@ public:
 		Node<K, V>* nod = new Node<K, V>;
 	
 		nod->p.key = key;
-		nod->p.value = (V)0;//consider 0 caz de baza
+
+		if (strcmp(typeid(V).name(), "char const * __ptr64") == 0)
+			nod->p.value = (V)"";
+		else
+			nod->p.value = (V)0;
+
 		nod->next = nullptr;
 		nod->p.index = count;
 
